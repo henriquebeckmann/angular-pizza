@@ -1,0 +1,23 @@
+<div class="product" *isChicken="product.description">
+  <div *ngIf="product.image; then productImageBlock else defaultImageBlock"></div>
+  <ng-template #productImageBlock>
+    <div class="product__image">
+      <img [src]="product.image" alt="pizza {{i+1}}">
+    </div>
+  </ng-template>
+  <ng-template #defaultImageBlock>
+    <div class="product__image">
+      <img src="/src/assets/images/pizzzzza.png" alt="pizza {{i+1}}">
+    </div>
+  </ng-template>
+  <custom-title [title]="product.title|uppercase"></custom-title>
+  <div class="product__text">{{product.description | titlecase | wordUpper:['queijo', 'tomate', 'molho', 'cogumelos']}}</div>
+  <div class="product__action">
+    <a class="btn product__btn" routerLink="/order" [queryParams]="{product:product.title}">Adicionar ao carrinho</a>
+    <a class="btn product__btn btn__white" [routerLink]="['/products', product.id]">Detalhes</a>
+  </div>
+  <!--  (click)="addProductToCart()"-->
+  <!--  <div>{{cartProductService.getCommonAmount()}}</div>-->
+  <!--  <div>{{product-card.date| date:'full'| titlecase}}</div>-->
+</div>
+

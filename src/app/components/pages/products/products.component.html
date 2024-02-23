@@ -1,0 +1,17 @@
+<section class="products">
+  <div class="container">
+    <h2 class="products__header" id="productsHeader">Escolha sua pizza favorita </h2>
+    <!--    {{lateData |async}}-->
+    <div class="products__items">
+      <product-card *ngFor="let product of products; let i=index" [product]="product" [i]="i">
+<!--               (addToCartEvent)="addToCart($event)"-->
+      </product-card>
+<div *ngIf="loading" class="loader-bg">
+  <div class="loader">
+
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,387 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Muller", sans-serif;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("./assets/fonts/MullerRegular.otf");
+}
+@font-face {
+  font-family: "Muller Bold";
+  src: url("./assets/fonts/MullerBold.otf");
+}
+@font-face {
+  font-family: "Muller Extra Bold";
+  src: url("./assets/fonts/MullerExtraBold.otf");
+}
+.container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.white-box {
+  padding-top: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 3px 13.8px 1.2px rgba(152, 152, 152, 0.5);
+}
+
+.btn {
+  background-color: rgb(255, 175, 24);
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 22px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Muller Bold", sans-serif;
+  color: rgb(56, 36, 0);
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 1229px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.main {
+  margin: 132px 0 81px 0;
+}
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main__info {
+  max-width: 622px;
+}
+
+.main__double-title {
+  font-size: 45px;
+  font-family: "Muller Extra Bold", sans-serif;
+  line-height: 1.222;
+}
+
+.double-title {
+  color: rgb(185, 145, 80);
+}
+
+.double-title__span {
+  color: #ffaf18;
+}
+
+.main__advantages {
+  margin-top: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantage {
+  margin-top: 47px;
+  max-width: 306px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantage__text {
+  margin-left: 16px;
+}
+
+.advantage__title {
+  font-size: 16px;
+  font-family: "Muller Extra Bold", sans-serif;
+  color: rgb(255, 175, 24);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.advantage__description {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+}
+
+.main__action {
+  margin-top: 60px;
+}
+
+.main__btn {
+  width: 224px;
+  height: 60px;
+}
+.main__btn:hover {
+  background-color: rgb(96, 219, 48);
+}
+
+.products {
+  padding: 80px 0 120px 0;
+}
+
+.products__header {
+  font-size: 35px;
+  font-family: "Muller Bold", sans-serif;
+  color: rgb(189, 152, 92);
+  text-align: center;
+}
+
+.products__items {
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.order {
+  padding: 120px 0 115px 0;
+  overflow: hidden;
+}
+
+.order__container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.order__text {
+  max-width: 384px;
+}
+
+.order__double-title {
+  margin-bottom: 65px;
+  font-size: 35px;
+  font-family: "Muller Extra Bold", sans-serif;
+  line-height: 1.286;
+  text-align: left;
+}
+
+.order__text-message {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+  line-height: 1.5;
+}
+
+.order__form {
+  margin-left: 122px;
+  max-width: 330px;
+}
+
+.base-input {
+  border-width: 1px;
+  border-color: rgb(185, 145, 80);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: rgb(155, 102, 0);
+  padding: 23px 22px 24px 22px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.order__base-input {
+  width: 330px;
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.order__base-input::placeholder {
+  color: rgb(203, 168, 110);
+}
+
+.order__btn {
+  width: 330px;
+  height: 60px;
+}
+
+.order__image {
+  width: 282px;
+  position: relative;
+  margin-left: 78px;
+}
+
+.order__image-img {
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+
+.cookie {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(185, 145, 80);
+  border-radius: 15px;
+}
+.cookie-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: "Muller Bold", sans-serif;
+}
+.cookie-title span {
+  font-size: 40px;
+  cursor: pointer;
+}
+.cookie-text {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+.cookie-button .btn {
+  border: 0;
+  outline: none;
+  margin-top: 10px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1229px) {
+  .main__pizza {
+    width: 400px;
+    margin-top: 40px;
+  }
+  .main__pizza-img {
+    max-width: 100%;
+  }
+  .products__items {
+    justify-content: center;
+  }
+  .order__form {
+    margin-left: 45px;
+  }
+  .order__container {
+    max-width: 1024px;
+  }
+}
+/* 768-1023 */
+@media screen and (max-width: 1023px) {
+  .main__container {
+    flex-direction: column;
+  }
+  .main__info {
+    order: 2;
+    margin-top: 20px;
+  }
+  .main {
+    margin-top: 70px;
+  }
+  .main__double-title {
+    text-align: center;
+  }
+  .main__action {
+    text-align: center;
+  }
+  .products {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+  .order {
+    padding-top: 60px;
+    position: relative;
+  }
+  .order__image {
+    position: absolute;
+    z-index: -1;
+    right: calc(60% - 400px);
+  }
+  .order__image-img {
+    position: relative;
+  }
+  .order__container {
+    justify-content: center;
+  }
+}
+/* 425-767 */
+@media screen and (max-width: 767px) {
+  .main__double-title {
+    line-height: 45px;
+  }
+  .main__advantages {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .order__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order__double-title {
+    text-align: center;
+  }
+  .order__text-message {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .order__form {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 656px) {
+  .main__advantages {
+    max-width: 306px;
+  }
+}
+/* 375-424 */
+@media screen and (max-width: 424px) {
+  .main__pizza {
+    width: 100%;
+  }
+}
+/* 320-374 */
+@media screen and (max-width: 374px) {
+  .main__double-title {
+    font-size: 38px;
+  }
+  .order__form {
+    text-align: center;
+  }
+  .order__base-input {
+    width: 290px;
+  }
+  .order__btn {
+    width: 290px;
+  }
+}
+.loader-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.49);
+}
+
+.loader {
+  border: 15px solid #f3f3f3;
+  border-top: 15px solid #ffaf18;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
